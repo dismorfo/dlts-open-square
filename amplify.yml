@@ -46,7 +46,7 @@ frontend:
         - git config --add core.quotepath false
     build:
       commands:
-        - hugo --gc --minify
+        - hugo --gc --minify -e production
   artifacts:
     baseDirectory: public
     files:
